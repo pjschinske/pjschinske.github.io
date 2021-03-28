@@ -18,7 +18,7 @@ info-email: info@wwuracing.com
 sponsorship-email: sponsorship@wwuracing.com
 description: Western Washington University Formula SAE Team
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pjschinske.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wwuracing.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
