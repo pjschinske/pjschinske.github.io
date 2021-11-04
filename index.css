@@ -1,9 +1,14 @@
+:root {
+    background-color: #CCC;
+}
+
 #main {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     font-weight:400;
     font-size: 2em;
     margin-top: 1em;
+    color: #222;
 }
 
 h1 {
@@ -13,7 +18,7 @@ h1 {
 }
 
 #dev {
-    margin:1em 0;
+    margin: 1em 0;
 }
 
 p {
