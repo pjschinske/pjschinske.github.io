@@ -1,0 +1,59 @@
+:root {
+    background-color: #CCC;
+}
+
+#main {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    color: #222;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    color: #222;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+    font-size: 32pt;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0 0.1em 0.2em 0.5em;
+}
+
+#dev {
+    font-size: 400;
+    margin: 1em 0;
+}
+
+p {
+    font-size: 400;
+    margin: 0;
+}
+
+a {
+    font-size: 400;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 2px solid #111;
+    padding: 6px;
+    padding: 5px 8px 5px 8px;
+    font-size: 16pt;
+}
