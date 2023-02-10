@@ -17,17 +17,18 @@ h1 {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     font-size: 2em;
-    margin-top: 1em;
     color: #222;
     font-weight: 700;
-    margin: 0 0 0.5em;
+    margin: 1em 0 0.5em;
     font-size: 32pt;
+    min-height: 57px;
 }
 
 h2 {
     font-weight: 300;
     font-size: 1.2em;
     margin: 0 0.1em 0.2em 0.5em;
+    min-height: 50px;
 }
 
 #dev {
@@ -42,6 +43,12 @@ p {
 
 a {
     font-size: 400;
+}
+
+input {
+    width: 5em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14pt;
 }
 
 table {

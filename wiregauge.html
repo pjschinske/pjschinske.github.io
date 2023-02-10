@@ -9,7 +9,8 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=block" rel="stylesheet">
+        <script src="wiregauge.js" defer></script>
     </head>
         <h1>Wire Gauge Conversions</h1>
         <div id="main">
@@ -19,6 +20,12 @@
                     <tr>
                         <th>AWG</th>
                         <th>mm²</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="inputAWG" name="AWG wire size">
+                        </td>
+                        <td id="outputMM2"></td>
                     </tr>
                     <tr>
                         <td>36</td>
@@ -120,6 +127,12 @@
                     <tr>
                         <th>mm²</th>
                         <th>AWG</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="inputMM2" name="MM2 wire size">
+                        </td>
+                        <td id="outputAWG"></td>
                     </tr>
                     <tr>
                         <td>0.13</td>
