@@ -37,12 +37,18 @@ h2 {
 }
 
 p {
-    font-size: 400;
-    margin: 0;
+    font-size: 0.5em;
+    max-width: 30em;
+    text-align: justify;
+    margin: 0 auto .3em;
 }
 
 a {
     font-size: 400;
+}
+
+img {
+    margin: 0 1em 0.5em;
 }
 
 input {

@@ -25,7 +25,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="number" id="inputAWG" name="AWG wire size">
+                            <input type="text" id="inputAWG" name="AWG wire size" value="15">
                         </td>
                         <td id="outputMM2"></td>
                     </tr>
@@ -132,7 +132,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="number" id="inputMM2" name="MM2 wire size">
+                            <input type="text" id="inputMM2" name="MM2 wire size" value="0.3">
                         </td>
                         <td id="outputAWG"></td>
                     </tr>
@@ -229,6 +229,30 @@
                         <td>4.486/0</td>
                     </tr>
                 </table>
+            </div>
+            <div id="explanation">
+                <h2>Explanation</h2>
+                <p>
+                    Many wire size conversion tables out there are completely incorrect. For example, many label 1 AWG as 50 mm², even though it's not even close to that.
+                    This page uses the actual equations to give the correct conversions.
+                </p>
+                <p>
+                    Here's how it works: 36 AWG is defined as 0.005 inches in diameter, and 4/0 is defined as 0.46 inches in diameter.
+                    A smaller gauge number decreases the wire diameter by a constant factor. This leads to the following equation,
+                    where d is the diameter of the wire, and n is the wire gauge in AWG:
+                </p>
+                <img src="https://latex.codecogs.com/svg.image?\large&space;d&space;=&space;0.005&space;\textrm{&space;in}&space;\times&space;92^{(36-n)/39}=&space;0.127&space;\textrm{&space;mm}&space;\times&space;92^{(36-n)/39}" 
+                title="https://latex.codecogs.com/svg.image?\large d = 0.005 \textrm{ in} \times 92^{(36-n)/39}= 0.127 \textrm{ mm} \times 92^{(36-n)/39}" />
+                <p>
+                    Using the formula for a circle's area, we get the following equation, where A is the cross-sectional area in mm²:
+                </p>
+                <img src="https://latex.codecogs.com/svg.image?\large&space;A&space;=&space;\frac{0.127^{2}&space;\pi}{4}&space;\times&space;92^{(36-n)/19.5}&space;\approx&space;0.012668&space;\times&space;92^{(36-n)/19.5}" 
+                title="https://latex.codecogs.com/svg.image?\large A = \frac{0.127^{2} \pi}{4} \times 92^{(36-n)/19.5} \approx 0.012668 \times 92^{(36-n)/19.5}" />
+                <p>
+                    To convert from mm² to AWG, we can just invert the equation:
+                </p>
+                <img src="https://latex.codecogs.com/svg.image?\large&space;&space;n&space;=&space;36-19.5\log_{92}\left(&space;\frac{4A}{0.127\textsuperscript{2}&space;\pi}&space;\right)&space;\approx&space;36-&space;19.5\log_{92}\left(&space;\frac{A}{0.012668}&space;\right)"
+                title="https://latex.codecogs.com/svg.image?\large n = 36-19.5\log_{92}\left( \frac{4A}{0.127\textsuperscript{2} \pi} \right) \approx 36- 19.5\log_{92}\left( \frac{A}{0.012668} \right)" />
             </div>
         </div>
     </body>
