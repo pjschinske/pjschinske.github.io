@@ -1,5 +1,5 @@
 :root {
-    background-color: #CCC;
+    background-color: #e3d9c8;
 }
 
 #main {
@@ -39,8 +39,8 @@ h2 {
 p {
     font-size: 0.5em;
     max-width: 30em;
-    text-align: justify;
-    margin: 0 auto .3em;
+    text-align: left;
+    margin: 0 auto .7em;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
 }
 
 img {
-    margin: 0 1em 0.5em;
+    margin: 0 1em 0.7em;
 }
 
 input {
@@ -65,7 +65,7 @@ table {
 }
 
 th, td {
-    border: 2px solid #111;
+    border: 2px solid #333;
     padding: 6px;
     padding: 5px 8px 5px 8px;
     font-size: 16pt;
