@@ -237,8 +237,8 @@
                     This page uses the actual equations to give the correct conversions.
                 </p>
                 <p>
-                    Here's how it works: 36 AWG is defined as 0.005 inches in diameter, and 4/0 is defined as 0.46 inches in diameter.
-                    A smaller gauge number decreases the wire diameter by a constant factor. This leads to the following equation,
+                    Here's how it works: solid 36 AWG wire is defined as 0.005 inches in diameter, and solid 4/0 wire is defined as 0.46 inches in diameter.
+                    A smaller gauge number increases the wire diameter by a constant factor. This leads to the following equation,
                     where d is the diameter of the wire, and n is the wire gauge in AWG:
                 </p>
                 <img src="https://latex.codecogs.com/svg.image?\large&space;d&space;=&space;0.005&space;\textrm{&space;in}&space;\times&space;92^{(36-n)/39}=&space;0.127&space;\textrm{&space;mm}&space;\times&space;92^{(36-n)/39}" 
@@ -253,6 +253,9 @@
                 </p>
                 <img src="https://latex.codecogs.com/svg.image?\large&space;&space;n&space;=&space;36-19.5\log_{92}\left(&space;\frac{4A}{0.127\textsuperscript{2}&space;\pi}&space;\right)&space;\approx&space;36-&space;19.5\log_{92}\left(&space;\frac{A}{0.012668}&space;\right)"
                 title="https://latex.codecogs.com/svg.image?\large n = 36-19.5\log_{92}\left( \frac{4A}{0.127\textsuperscript{2} \pi} \right) \approx 36- 19.5\log_{92}\left( \frac{A}{0.012668} \right)" />
+                <p>
+                    Solid and stranded wires of the same gauge have the same cross-sectional area, so these conversions work with both solid and stranded wire.
+                </p>
             </div>
         </div>
     </body>
